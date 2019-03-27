@@ -52,7 +52,7 @@ pipeline {
       parallel {
         stage('IQ-BOM') {
           steps {
-            nexusPolicyEvaluation(iqApplication: 'petclinic', iqStage: 'build', iqScanPatterns: [[scanPattern: '']])
+            nexusPolicyEvaluation(iqApplication: 'petclinic01', iqStage: 'build', iqScanPatterns: [[scanPattern: '']])
           }
         }
         stage('Static Analysis') {
